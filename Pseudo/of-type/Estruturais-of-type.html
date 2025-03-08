@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pseudo-classes Estruturais of-type</title>
+</head>
+<style>
+     /* estilo no ultimo elemento do tipo P dentro da div cabeca*/
+    .cabeca p:last-of-type{
+        background-color: red;
+    }
+    /* estilo no primeiro elemento p dentro da div cabeca*/
+    .cabeca p:first-of-type{
+        background-color: blue;
+    }
+    /* escolho qual elemento vai receber o estilo no caso o ' 2' */
+    .cabeca p:nth-of-type(2){ 
+        background-color: green;
+    }
+
+    /* estilo no elemento esquerdo da div corpo */
+    .corpo p:nth-of-type(odd){
+        background-color: brown;
+    }
+    /* estilo no elemento direito da div corpo */
+    .corpo p:nth-of-type(even){
+        background-color: tomato;
+    }
+</style>
+<body>
+<div class="cabeca">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit aliquid facilis nihil id deserunt minima itaque vitae rem! Eum officia odit ab consequatur dolore sit enim modi ipsam impedit.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit aliquid facilis nihil id deserunt minima itaque vitae rem! Eum officia odit ab consequatur dolore sit enim modi ipsam impedit.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit aliquid facilis nihil id deserunt minima itaque vitae rem! Eum officia odit ab consequatur dolore sit enim modi ipsam impedit.
+    </p>
+</div>
+<div class="corpo">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit aliquid facilis nihil id deserunt minima itaque vitae rem! Eum officia odit ab consequatur dolore sit enim modi ipsam impedit.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit aliquid facilis nihil id deserunt minima itaque vitae rem! Eum officia odit ab consequatur dolore sit enim modi ipsam impedit.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit aliquid facilis nihil id deserunt minima itaque vitae rem! Eum officia odit ab consequatur dolore sit enim modi ipsam impedit.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit aliquid facilis nihil id deserunt minima itaque vitae rem! Eum officia odit ab consequatur dolore sit enim modi ipsam impedit.
+    </p>
+
+</div>
+</body>
+</html>

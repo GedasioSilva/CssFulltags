@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>displays table, table-row e table-cell</title>
+</head>
+    <style>
+        div{
+            border: 1px solid tomato;
+            width: 100px;
+            height: 100px;
+            text-align: center; /* deixar o elemento no meio da div*/
+            line-height: 100px;
+            margin-bottom: 10px; /* da uma distancia do elemento de baixo*/
+        }
+        ol,ul,li{
+            border: solid 1px tomato;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        ol{
+            display: table;
+            width: 300px;
+        }
+        ul{
+            display: table-row;
+        }
+        li{
+            display: table-cell;
+            text-align: center;
+        }
+        .titulo{
+            background-color: tomato;
+        }
+    </style>
+<body>
+    <p>Canal Fessor Bruno</p>
+
+    <div>
+        DIV
+    </div>
+
+    <OL>
+        <ul class="titulo">
+            <li>Cor</li>
+            <li>Format</li>
+            <li>Objeto</li>
+        </ul>
+
+        <ul>
+            <li>verde</li>
+            <li>Quadrado</li>
+            <li>Caneca</li>
+        </ul>
+
+        <ul>
+            <li>Vermehgor</li>
+            <li>Circulo</li>
+            <li>Microfone</li>
+        </ul>
+    </OL>
+</body>
+</html>

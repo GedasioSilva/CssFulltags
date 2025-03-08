@@ -1,0 +1,27 @@
+span{
+    color: blue;
+    padding: 15px;
+}
+span:hover{
+    color: brown;
+}
+p{
+    color: aquamarine;
+    font-size: 13pt;
+}
+p:hover{
+    zoom: 110%;
+}
+#p1{
+    color: black;
+}
+.txt{
+    font-size: 16pt;
+    color: rgb(160, 104, 36);
+
+}
+h4,h5,h6{
+    font-size: 18pt;
+    color: rgb(80, 6, 129);
+    background-color: azure;
+}

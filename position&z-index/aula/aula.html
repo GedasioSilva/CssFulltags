@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> position e z-index</title>
+</head>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            border-radius: 10px;
+            border: 1px solid black;
+            background: #ddd;
+            display: flex;
+
+        }
+        #d0{
+            width: 700px;
+            height: 500px;
+            background: #eef;
+            position: absolute;
+            top: 150px;
+            left: 300px;
+        }
+        #d1,#d2{
+            width: 300px;
+            height: 150px;
+        }
+        #d1{
+            position: absolute;
+            z-index: 2; /* informa quem fica na frente*/
+           
+        }
+        #d2{
+           /* position: fixed;  não se mexe */
+           /* position: relative; o elemento vai ser posicionado de acordo com o elemento anterior*/
+            position: absolute;/* pode ser movido de acordo com o conteiner*/
+            top: 50px;
+            left: 70px;
+            z-index: 1;
+        }
+    </style>
+<body>
+    <div id="d0">
+        <div id="d1">Canal Fessor Bruno</div>
+        <div id="d2">Baixe as Apostilas pelo site cfbCursos</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercitando flex container</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="img"> <img src="logo.png" alt=""></div>
+
+        <div class="linhas">
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+    </div>
+
+    <style>
+        .img img{
+            width: 80px;
+        }
+
+        .menu{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        .linhas{
+            
+            display: flex;
+            align-items: center;
+        }
+        .linhas a{
+            padding: 5px;
+        }
+    </style>
+</body>
+</html>

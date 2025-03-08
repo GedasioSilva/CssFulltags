@@ -1,0 +1,48 @@
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;   
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.center{
+display: flex;
+flex-wrap: wrap;
+max-width: 128 0px;
+margin: 0 auto;
+padding: 0 2%;
+}
+html,body{
+height: 100%;
+overflow: hidden; /*Pra tirar a barra de rolagem */
+overflow-x:hidden; /*Pra corta o icone e não deixar ficar barra de rolagem na posição x */
+}
+
+header{
+height: 80px;    
+padding: 50px 0;
+}
+
+.logo{
+width: 50%; /* pra faztar o menu em 50 % da tela do logo*/
+}
+.menu{
+padding-top: 10px; /*distancia da borda de cima*/
+width: 50%; /* se não tiver espaço desse pra linha a baixo*/
+text-align: right;
+}
+.menu a{
+text-decoration: none;
+text-transform: uppercase;
+font-size: 16px;
+padding:10px;
+margin: -3px;
+background-color: tomato;
+border-radius: 10px;
+box-sizing: border-box;
+color: black;
+}
+.menu a:hover{
+    color: white;
+    zoom: 105%;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <!-- pra fazer a transformação devagar não dar Um Pulo-->
+</head>
+    <style>
+        /*Transition tem que aplicar no elemento original*/
+        p{
+            color: black;
+            width: 300px;
+            height: 250px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: justify;
+            transition:width 2s ,height 2s,background-color 2s; /* o tempo de transição*/
+            transition-timing-function:linear; /* vai animando no mesmo tempo de 2s*/
+            /* transition-timing-function:ease; *começa a anima de vagar no meio vai rapido e termina devagar*/
+            /*transition-timing-function:ease-in-out; começa a anima de vagar no meio vai rapido e termina devagar*/
+           /* transition-timing-function: ease-out;  começa rapido depois vai devagar*/
+           /* transition-timing-function:cubic-bezier(0.5,0,0.5,1) ;  controla a velocidade manualmente*/
+            transition-delay: 1s; /* o tempo que demora pra começar a animação*/
+        }
+        p:hover{
+            width: 500px;
+            height: 120px;
+            background-color: tomato;
+            color: rgba(43, 4, 152, 0.798);
+            transform: rotate(1deg);
+        }
+
+
+
+
+    </style>
+<body>
+    <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Vel explicabo quisquam repudiandae accusantium, eligendi
+     upiditate quam adipisci aspernatur aut possimus? Vero 
+     nemo nihil dolor quas sequi, blanditiis eos
+     quisquam praesentium?</p>
+</body>
+</html>

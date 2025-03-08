@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> background - Parte 2 - background-clip, padding, border </title>
+</head>
+    <style>
+        #d1,#d2,#d3{
+            padding:0px 10px 50px 10px;
+            border: 10px dotted black; /* dotted Pontilhada*/
+            background-image:url("sfc.png");
+        }
+        #d1{
+            background-clip: border-box; /*Borda Normal */
+        }
+        #d2{
+            background-clip: padding-box;/* o background começa depois da borda */
+        }
+        #d3{
+            background-clip: content-box;/* só coloca as propriedades no conteudo dentro da borda */
+        }
+
+
+    </style>
+<body>
+    <div id="d1"></div><br>
+    <div id="d2"></div><br>
+    <div id="d3">Canal Fessor Bruno</div><br>
+</body>
+</html>

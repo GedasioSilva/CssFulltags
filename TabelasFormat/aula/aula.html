@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formatações para tabelas</title>
+</head>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        table,td,th{ /* Pra Colocar as Linhas da Tabela*/
+            border: 1px solid black;
+            
+        }
+        table{ /* Definir a largura da tabela */
+            width: 500px;
+            table-layout: fixed; /* os 500 vai ser dividido pras colunas */
+            border-collapse:separate; /*  border-collapse: separate; espaços dentro da borda */
+             /* empty-cells:hide ;pra não mostra a celular vazia tenho que tirar algum dado da tabela*/
+            /*border-spacing: 6px 3px; Espaços dentro da tabela*/
+        }
+        td,th{
+            height: 20px;
+            vertical-align: middle;
+            text-align: center;
+        }
+        
+        th{
+            background-color: #8a8;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        th:hover{
+            zoom: 110%;
+        }
+        tr:nth-child(even){ /* "even" = par ou toda linha par  Linha sim linha não muda de cor pra ficar melhor de ver na tabela*/
+            background-color: rgb(143, 143, 194);
+        }
+        
+
+    </style>
+<body>
+        <table>
+            <tr> <!-- Pra construir a tabela  -->
+                <th>Peça</th><th>Valor</th><th>Estoque</th> <!-- Primeira linha São os Titulos -->
+            </tr>
+            <tr>
+                <td>Processador</td> <td>R$800,00</td> <td>30</td>
+            </tr>
+
+            <tr>
+                <td>Processador</td> <td>R$800,00</td> <td>30</td>
+            </tr>
+
+            <tr>
+                <td>Processador</td> <td>R$800,00</td> <td>30</td>
+            </tr>
+
+            <tr>
+                <td>Processador</td> <td>R$800,00</td> <td>30</td>
+            </tr>
+        </table>
+
+
+        <br>
+        
+        <div>Ola</div>
+</body>
+</html>

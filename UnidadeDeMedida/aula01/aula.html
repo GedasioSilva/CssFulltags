@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidade de Medida (pixel e em)</title>
+</head>
+    <style>
+        p{
+            /*font-size:16px;tamanho padrão do Navegador*/
+           /*em é unidade de medida em relção ao elemento pai*/
+            font-size:3em; /* ela usa o tamanho da fonte do elemento pai 1em é normal 2em é o doblo dotamanho do elemento pai , pode ser usado pra qualquer elemento*/
+        }
+        #p3{
+            font-size:30px;
+            color: red;
+        }
+        div{
+            display: inline-block;
+           
+        }
+
+        #d1{
+            border: 1px solid black;
+            background-color:blue;
+            width: 300px;
+            height: 2em;/* o elemento pai tem 16px*/
+
+        }
+        #d2{
+            border: 1px solid black;
+            background-color: green;
+            width: 300px;
+            height: 32px; 
+        }
+
+    </style>
+<body>
+    <p id="p1">Cfb Cursos</p>
+    <p id="p2">Cfb Cursos</p>
+    <p id="p3">Cfb Cursos</p>
+
+    <div id="d1"></div>
+    <div id="d2"></div>
+</body>
+</html>

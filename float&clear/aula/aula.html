@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementos Flutuantes dentro da Pagina</title>
+</head>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        img{
+            border: 1px solid black;
+        }
+        #img1{
+            float: right;
+        }
+        #img2{
+            float: left;
+            
+        }
+       
+        .fix{
+            clear: both; /* seria pra tirar todo o estilo e a pagina começa limpar apartir da class fix*/
+        }
+       
+    </style>
+<body>
+    <img id="img1" src="icone.jpg" alt=""><img id="img2" src="icone.jpg" alt="">
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi nostrum alias quas! Dolores delectus itaque, perferendis, odit officia rerum soluta nulla quis laudantium nihil est cum, cupiditate et earum adipisci!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis adipisci aut cupiditate vel, eveniet inventore praesentium, fuga dolorum at velit odio. Dolores, dignissimos? Iure vel, et quibusdam necessitatibus atque quisquam!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum nemo ratione eum excepturi vitae quo corporis ea architecto magni illum! Repudiandae modi ad veniam ipsam, tempora molestias quidem quae deleniti!</p>
+    
+    <p class="fix">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi nostrum alias quas! Dolores delectus itaque, perferendis, odit officia rerum soluta nulla quis laudantium nihil est cum, cupiditate et earum adipisci!</p>
+    
+</body>
+</html>

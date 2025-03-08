@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background - Parte 3 - background-attachment, size e repeat</title>
+</head>
+<style>
+    body{
+        background-image: url("sfc.png"),url("sfc.png");
+        background-repeat: no-repeat,repeat-y; /*Pra Imagem não repetir*/
+        background-size:200px; /* o tamanho da imagem vai ser 400px*/
+        background-attachment:scroll,fixed; /* com esse valor a imagem não descer "só faz em imagem"*/
+    }
+    .menu{
+        position:fixed; /*Pra deixar elementos fixados */
+        background-repeat: no-repeat;
+        margin-left: 80%;
+        background-color: aqua;
+        width: 100px;
+        height: 50px;
+        
+    }
+</style>
+<body>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Contato</li>
+            </ul>
+        </div>
+        <pre>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam optio tempore, culpa officia cum <br>
+            omnis placeat maxime incidunt,ullam minima id vel rerum eius quisquam voluptates possimus maiores.br
+            Harum, voluptatibus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi eius nesciunt enim ab saepe rem ea,
+             debitis praesentium est ducimus minus? Recusandae laborum deserunt neque magnam odit saepe dignissimos!
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, voluptates totam repudiandae odio facilis unde quas? Debitis, quisquam,
+            dolorem eveniet quae dolorum reprehenderit, consectetur laborum molestias optio laboriosam unde blanditiis!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam optio tempore, culpa officia cum <br>
+            omnis placeat maxime incidunt,ullam minima id vel rerum eius quisquam voluptates possimus maiores.br
+            Harum, voluptatibus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi eius nesciunt enim ab saepe rem ea,
+             debitis praesentium est ducimus minus? Recusandae laborum deserunt neque magnam odit saepe dignissimos!
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, voluptates totam repudiandae odio facilis unde quas? Debitis, quisquam,
+            dolorem eveniet quae dolorum reprehenderit, consectetur laborum molestias optio laboriosam unde blanditiis!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam optio tempore, culpa officia cum <br>
+            omnis placeat maxime incidunt,ullam minima id vel rerum eius quisquam voluptates possimus maiores.br
+            Harum, voluptatibus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi eius nesciunt enim ab saepe rem ea,
+             debitis praesentium est ducimus minus? Recusandae laborum deserunt neque magnam odit saepe dignissimos!
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, voluptates totam repudiandae odio facilis unde quas? Debitis, quisquam,
+            dolorem eveniet quae dolorum reprehenderit, consectetur laborum molestias optio laboriosam unde blanditiis!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam optio tempore, culpa officia cum <br>
+            omnis placeat maxime incidunt,ullam minima id vel rerum eius quisquam voluptates possimus maiores.br
+            Harum, voluptatibus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi eius nesciunt enim ab saepe rem ea,
+             debitis praesentium est ducimus minus? Recusandae laborum deserunt neque magnam odit saepe dignissimos!
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, voluptates totam repudiandae odio facilis unde quas? Debitis, quisquam,
+            dolorem eveniet quae dolorum reprehenderit, consectetur laborum molestias optio laboriosam unde blanditiis!
+        </p>
+    </pre>
+</body>
+</html>

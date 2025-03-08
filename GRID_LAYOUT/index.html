@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaps , </title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: arial;
+            color: black;
+        }
+        .conteiner{
+            display:grid;/* informando que é uma grade*/
+            grid-template-columns:auto auto auto;/*quantas colunas vai ter a grade*/
+            /*  grid-template-rows: 150px 50px;  isso mostra que a primeira linha é 150px a segunda 50px e o restante sera auto*/
+            /*  grid-column-gap: 10px; Espaços nas colunas*/
+            /* grid-row-gap: 10px;   Espaços nas linhas*/
+          grid-gap:5px 10px; /*espaços entre as linhas e colunas primeiro valor linha segundo valor coluna*/
+        }
+        .item{
+            background-color: #048;
+            color: white;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .t1{
+          /*  grid-column-start: 1;qual coluna o elemento começa*/
+          /*  grid-column-end:4;  qual coluna o elemento vai terminar*/
+              grid-column: 1/4; /* resune aonde começa e terminar a primeira coluna*/
+            /* grid-row: 1/3; começa na primeira linha e vai até a 3*/ 
+        }
+    </style>
+
+    <div class="conteiner">
+        <div class="item t1 ">CFB Cursos</div>
+        <div class="item ">CFB Cursos</div>
+        <div class="item ">CFB Cursos</div>
+        <div class="item">CFB Cursos</div>
+        <div class="item">CFB Cursos</div>
+        <div class="item">CFB Cursos</div>
+    </div>
+</body>
+</html>

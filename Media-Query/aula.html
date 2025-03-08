@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+    <!-- tipos de media sreen print  all -->
+    
+    
+</head>
+    <style>
+        img{
+            width: 40px;
+        }
+        /* se passar de 1200 então vem essa formatação*/
+        body{
+            background-color: black;
+        }
+        /* ta mostando que é tela e o tamanho maximo é 500px se a tela for maior que 500 não executa as regras*/
+        @media screen and (min-width:0px) and (max-width:500px){
+            body{
+                background-color: red;
+            }
+        }
+        /* se a tela for maior que 500 e menor que 800 cai nessa formatação*/
+        @media screen and (min-width:501px) and (max-width:800px){
+            body{
+                background-color:blue;
+            }
+        }
+        /* se for maior que 801 e menor que 1200*/
+        @media screen and (min-width:801px) and (max-width:1200px){
+            body{
+                background-color: yellow;
+            }
+        }
+        
+        /* elementos de fotos*/
+        /* elemento lina*/
+        @media (orientation: landscape) {
+        body {
+            flex-direction: row;
+        }
+        }
+        /* portal coluna*/
+        @media (orientation: portrait) {
+            body {
+                flex-direction: column;
+                }     
+        }
+    </style>
+<body>
+    <img src="Logo02.png" alt="">
+</body>
+</html>

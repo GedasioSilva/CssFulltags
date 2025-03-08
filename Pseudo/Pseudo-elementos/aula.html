@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+</head>
+<style>
+    /* a primeira letra dentro do elemento article recebe o paramento*/
+    article::first-letter{
+        font-size: 22px;
+        color: red;
+    }
+    /* primeira linha do elemento article recebe o parametro*/
+    article::first-line{
+        background-color: green;
+    }
+</style>
+<body>
+    <article>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ea eveniet neque quam vero animi, alias facere modi aut assumenda omnis tempora vitae! Veniam saepe reprehenderit, quos quis aliquam iusto!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ea eveniet neque quam vero animi, alias facere modi aut assumenda omnis tempora vitae! Veniam saepe reprehenderit, quos quis aliquam iusto!
+        </p>
+    </article>
+</body>
+</html>

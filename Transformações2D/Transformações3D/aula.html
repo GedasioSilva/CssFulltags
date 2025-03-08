@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Transformações 3D </title>
+     <!-- TransFormações 3D tem um eixo a mais x y z -->
+</head>
+    <style>
+        #dv1{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            transform:translate(200px , 200px);
+            transform-origin: 200% 200%;
+            backface-visibility: visible; /* Quando girar mostra a parte de traz da div*/
+            /* transform: rotateY(45deg); Vai girando no Eixo Y */  
+        }
+        body{
+            perspective:755px;
+        }
+    </style>
+        <script>
+            var y,n=0,ny=0,rotYINT;
+               
+            function rotateYDIV(){
+                y=document.getElementById("dv1");
+                clearInterval(rotYINT);
+                rotYINT=setInterval("startYRotate()",10);
+            }
+
+            function startYRotate(){
+                ny=ny+1;
+                y.style.transform="rotateY("+ ny + "deg) translate(200px ,200px)";
+                if(ny === 180 || ny >= 360){
+	            clearInterval(rotYINT);
+	            if (ny>=360){ny=0}
+	}
+}
+            
+        </script>
+<body>
+        <div id="dv1" onclick="rotateYDIV()">CFB Cursos</div>
+</body>
+</html>

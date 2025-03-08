@@ -1,0 +1,19 @@
+.flex-pai{
+    height: 500px;
+    background-color: blue;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; /* div pai alinhamento horizontal*/
+   /* align-items: center;  div pai alinhamento vertical*/
+   align-content: center; /*Alinha as linhas do container em relação ao eixo vertical*/
+}
+.flex-pai div{
+   /* flex-grow: 1; as divem crecem pra ocupar a div pai*/
+    background-color: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+

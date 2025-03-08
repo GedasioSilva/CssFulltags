@@ -1,0 +1,18 @@
+/* elemto de print com resolução minima de 1024 "se colocar pra imprimir vai ser essa resolução"*/
+@media print and (min-width: 1024px){
+    h1 { font-size: 30px;}
+  }
+
+/* esconde todos os elementos em telas de até 320px de largura e apenas em sintetizadores de voz.
+*/
+@media only speech and (max-width: 320px){
+    * { display: none;}
+  }
+
+
+  /* media query para todos os tipos de tela*/
+  @media all{
+    div { padding: 10px; }
+     img { width: 20px; height: 20px; }
+    }
+    

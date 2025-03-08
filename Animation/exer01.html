@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitando animação</title>
+</head>
+    <style>
+
+        @keyframes loguin{
+            from{left: 0px;}
+            to{left: 550px;}
+            
+            to{background-color: blue;}
+        }
+        *{
+            background-color: rgba(196, 213, 213, 0.289);
+            margin: 0px;
+            padding: 0px;
+        }
+    
+        
+        input{
+            display: flex;
+            display: block;
+        }
+        div{
+            background-color: blue;
+            text-align: center;
+            border-radius: 5px;
+            animation-name: loguin;
+            left: 550px;
+            top: 350px;
+            position:relative;
+            width: 178px;
+            height: 70px;
+            border: 1px solid black;
+            animation-timing-function:ease-in-out;
+            animation-duration: 4s;
+            animation-delay: 0s;
+        }
+    </style>
+<body>
+    <div>
+        <input type="text" placeholder="Informe seu nome">
+        <input type="password" placeholder>
+        <input type="submit" value="Enviar">
+    </div>
+</body>
+</html>
+
+
+  

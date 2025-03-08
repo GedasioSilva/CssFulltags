@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Box-sizing controlar o tamanho do elemento</title>
+    <!-- controlar o tamanho do elemento quando colocamos paddin e borda-->
+</head>
+    <style>
+        #d1{
+            width: 150px;
+            height: 150px;
+            border: 10px solid black;
+            padding: 25px;
+            box-sizing: border-box;/* faz com que a borda e o paddin não aumentem o tamanho da div*/
+        }
+        #d2{
+            width: 150px;
+            height: 150px;
+            border: 0px;
+            padding: 0px;
+            background-color: aqua;
+        }
+    </style>
+<body>
+    <div id="d1">Canal Fesssor Bruno</div>
+    <div id="d2">Canal Fesssor Bruno</div>
+</body>
+</html>

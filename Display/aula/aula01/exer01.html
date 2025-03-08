@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitando Display</title>
+</head>
+    <style>
+   
+        body{
+            background-color:rgb(202, 178, 22);
+            overflow: hidden;
+        }
+        .cabe{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 128 0px;
+            margin: 0 auto;
+            padding: 0 2%;
+            height:60px;
+            margin-top: -10px;
+        }
+        header{
+            height: 60px;
+            padding: 20px 0;
+            flex-grow: 1;
+        }
+        .logo{
+            width: 50%;
+        }
+        #logof{
+            color: white;
+            font-size: 25px;
+            padding: 10px;
+            background-color:pink;
+            border-radius: 12px;
+        }
+        #logof:hover{
+            zoom: 110%;
+            color: blue;
+            background-color: yellow;
+        }
+        #menu{
+            position:fixed;
+            width: 95%;
+            padding-top:30px;
+            text-align: right;
+            display: inline-block;
+        }
+        #menu a{
+            text-decoration:none;
+            padding: 6px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            color: black;
+            background-color: rgb(148, 85, 8);
+           border-radius: 3px;
+        }
+       
+        #menu a:hover{
+            transition:1s;
+            color:white;
+            zoom: 105%;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        
+       #dv1{
+        padding: 10px;
+        border: 1px solid beige;
+        top: -30px;
+       }
+       
+        
+       
+   
+    </style>
+<body>
+    <header class="cabe">
+        <div id="logo"><h1 id="logof">Menu Principal</h1></div>    
+            <div id="menu">
+                    <a href="#">Home</a>
+                    <a href="#">foto</a>
+                    <a href="#">contato</a>
+            </div> 
+    </header>
+   
+        <div id="dv1">
+           <img src="Bane01.jpg" alt="">
+        </div>
+
+</body>
+</html>
+

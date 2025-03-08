@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margens e centralização</title>
+</head>
+     <style>
+         div{
+             border: 1px solid black;
+             margin: auto;/* Só pega se o width e heigth tendo valor fixo*/
+            }
+
+            body{
+                margin: 0px;
+                
+            }
+             
+            #dv1{
+                width: 300px;
+                height: 300px;
+                margin-bottom: 30px; 
+            }
+
+            #dv2{
+                width: 200px;
+                height: 200px;
+            }
+
+            #dv1 p{
+                margin: 0px;
+                width: 150px;
+                border: 1px solid black;
+                margin: auto;
+            }
+     </style>
+<body>
+    <div id="dv1">
+        <p>Canal Fessor Bruno</p>
+        <p>Canal Fessor Bruno</p>
+        <p>Canal Fessor Bruno</p>
+     </div>
+    
+    <div id="dv2">
+        <p>Curso de Css</p>
+        <p>Curso de Css</p>
+        <p>Curso de Css</p>
+    </div>
+</body>
+</html>

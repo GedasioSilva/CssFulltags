@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes Estruturais: child</title>
+</head>
+<style>
+
+    /* se a classe cabeca tiver outras div dentro só o primeiro p de cada div dentro dela que vai receber a propriedade*/
+
+    /* estilo no primeiro elemento filho da classe cabeca*/
+    /* se a classe tiver exempro imagens muitos p só o primeiro vai receber estilo . imagina a div com 3 imagens só a primeira recebe*/
+    .cabeca p:first-child{
+    color: red;
+    }
+
+    /* só o ultimo elemento filho da class recebe pode ser qualquer elemento o ultimo recebe estilo*/
+    .cabeca p:last-child{
+        background-color: black;
+    }
+
+    /* escolher a posição que o ultimo elemento vai recber o parametro*/
+    .cabeca p:nth-child(2){
+        background-color: green;
+    }
+</style>
+<body>
+    <div class="cabeca">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit aliquid facilis nihil id deserunt minima itaque vitae rem! Eum officia odit ab consequatur dolore sit enim modi ipsam impedit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit aliquid facilis nihil id deserunt minima itaque vitae rem! Eum officia odit ab consequatur dolore sit enim modi ipsam impedit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit aliquid facilis nihil id deserunt minima itaque vitae rem! Eum officia odit ab consequatur dolore sit enim modi ipsam impedit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit aliquid facilis nihil id deserunt minima itaque vitae rem! Eum officia odit ab consequatur dolore sit enim modi ipsam impedit.
+        </p>
+    
+    </div>
+</body>
+</html>

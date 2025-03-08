@@ -1,0 +1,15 @@
+All: Se refere a todos os tipos de dispositivos.
+Braille: Se refere aos dispositivos táteis.
+Embossed: Se refere aos dispositivos que imprimem em braille.
+Handheld: Se refere aos dispositivos de mão, normalmente com telas pequenas de baixa resolução e largura de banda limitada.
+Print: Se refere aos dispositivos de impressão.
+Projection: Se refere a apresentações do tipo slides.
+Screen: Se refere a monitores ou dispositivos com telas coloridas e resolução adequada.
+Speech: Se refere a sintetizadores de voz ou leitores de tela.
+TTY: Se refere a terminais, teletypes e dispositivos portáteis com display limitado.
+TV: Se refere a televisores ou dispositivos com baixa resolução, quantidade de cores e scroll limitado.
+
+not: É utilizado quando se deseja que o resultado de uma determinada expressão seja o oposto ao real. Veja na Listagem 1 um exemplo do seu uso.
+only: É utilizado quando se deseja prevenir que navegadores antigos que não suportam Media Features tentem processar a expressão. Na Listagem 2 podemos ver um exemplo fiel disso.
+and: É utilizado em todas as Media Queries, tendo como função primária ser o elo entre o Media Type e a Media Feature. É também responsável pelas expressões múltiplas, isto é, quando usamos mais de uma Media Feature para compor a expressão.
+“,“: É utilizado para juntar duas ou mais expressões diferentes que deverão executar um mesmo conjunto de regras. Funciona como um “ou” condicional na lógica de programação.

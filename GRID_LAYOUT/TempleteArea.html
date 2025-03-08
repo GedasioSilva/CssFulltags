@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>area ,grid-template-area </title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: arial;
+            color: black;
+        }
+        .header{
+            grid-area: header;
+        }
+        .principal{
+            grid-area: principal;
+        }
+        .lateral{
+            grid-area: lateral;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .conteiner{
+            display:grid;/* informando que é uma grade*/
+            grid-template-columns:auto;/*quantas colunas vai ter a grade*/
+            grid-template-rows:100px 100px 100px ;
+          /*  gap:10px; espaços entre as linhas e colunas primeiro valor linha segundo valor coluna*/
+            grid-template-areas:
+                "header header header header" /*Isso informa que a primeira linha é toda do header com 4 elementos*/
+                "principal principal . lateral " /* duas principal uma vazia e uma lateral*/
+                "footer footer footer footer" /* tem que informar o nome do grid area e não a class*/
+            ;
+        }
+        .item{
+            background-color: #048;
+            color: white;
+            border: 1px solid black;
+            text-align: center;
+        }
+     
+    </style>
+
+    <div class="conteiner">
+        <div class="item  header">Header</div>
+        <div class="item principal ">Principal</div>
+        <div class="item  lateral">Lateral</div>
+        <div class="item footer ">Footer</div>
+    </div>
+</body>
+</html>

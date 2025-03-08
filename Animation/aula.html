@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Fazer animação sem precisar colocar o Hover</title>
+    <!-- Faz o elemento andar na tela-->
+</head>
+    <style>
+        @keyframes anima1{/* determina a animação*/
+            from{left: 0px;top: 0px;} /*primeiro*/
+            to{left: 200px; top: 200px;}/*Ultimo*/
+          
+        }
+        @keyframes anima2{/* determina a animação*/
+            from{background-color: white;} /*primeiro*/
+            to{background-color:red;}    /*Ultimo*/
+        }
+
+        p{
+            position: relative;
+            left:200px;
+            top: 200px;
+            background-color: red;
+            width: 260px;
+            height: 260px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: justify;
+            animation-name: anima1,anima2;
+            animation-duration: 2s; /*Qual a duração*/
+            animation-timing-function: linear;
+            animation-delay: 0s; /*qual animação*/
+            
+        }
+    </style>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eaque possimus esse sapiente sit quis expedita vitae, pariatur quisquam illo est rerum incidunt libero earum magni optio ea illum dolores?</p>
+</body>
+</html>

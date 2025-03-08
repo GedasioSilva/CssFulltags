@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+    <style>
+           @keyframes anima{/* determina a animação*/
+            0%{left: 0px;top: 0px;} /*primeiro*/
+            25%{left: 300px;top: 0px;}
+            50%{left: 300px;top: 300px;}
+            75%{left: 0px;top: 300px;}
+            100%{left: 0px;top: 0px;}
+        }
+      
+
+        p{
+            position: relative;
+            left:0px;
+            top:0px;
+            width: 260px;
+            height: 260px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: justify;
+            animation-name: anima;
+            animation-duration: 4s; /*Qual a duração*/
+            animation-timing-function: linear;
+            animation-delay: 0s; /*qual animação*/
+            animation-iteration-count: 2;/*Quantas vezes a animação vai ser rodada*/
+            animation-play-state: running;/* posso fazer a animação rodar ou fazer a animação parar usando o javascript*/
+            animation-direction: alternate;/* muda a direção da animação*/
+        }
+    </style>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloremque voluptate fugiat repellendus dolorem rem amet dicta in. Labore saepe ex quod harum minima alias ipsum corporis, autem numquam enim.</p>
+</body>
+</html>
